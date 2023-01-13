@@ -29,9 +29,35 @@ const BoardWriteUI = () => {
           <S.AdressInput></S.AdressInput>
           <S.AdressBtn>우편번호 검색</S.AdressBtn>
         </S.AdressWrapper>
-        <S.WriterInput></S.WriterInput>
-        <S.WriterInput></S.WriterInput>
+        <S.WriterBlock>
+          <S.WriterInput></S.WriterInput>
+        </S.WriterBlock>
+        <S.WriterBlock>
+          <S.WriterInput></S.WriterInput>
+        </S.WriterBlock>
       </S.WriterBlock>
+      <S.WriterBlock>
+        <S.WriterSpan>유튜브</S.WriterSpan>
+        <S.WriterInput placeholder='링크를 복사해주세요'></S.WriterInput>
+      </S.WriterBlock>
+      <S.WriterBlock>
+        <S.WriterSpan>사진첨부</S.WriterSpan>
+        <S.ImageInputWrapper>
+          <S.ImageInput>+<br/>Upload</S.ImageInput>
+          <S.ImageInput>+<br/>Upload</S.ImageInput>
+          <S.ImageInput>+<br/>Upload</S.ImageInput>
+        </S.ImageInputWrapper>
+      </S.WriterBlock>
+      <S.MainOptionWrapper>
+        <S.WriterSpan>메인설정</S.WriterSpan>
+        <S.RadioButton type='radio' id='youtube' name='radio'></S.RadioButton>
+        <label htmlFor="youtube">유튜브</label>
+        <S.RadioButton type='radio' id='image' name='radio'></S.RadioButton>
+        <label htmlFor="iamge">사진</label>
+      </S.MainOptionWrapper>
+      <S.BtnsWrapper>
+        <S.SubmitBtn>등록하기</S.SubmitBtn>
+      </S.BtnsWrapper>
     </S.BoardWrapper>
   )
 }
